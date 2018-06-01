@@ -1,0 +1,109 @@
+header {
+    background: none;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: #222;
+}
+
+header li {
+    margin-right: 20px;
+    padding: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+header li a {
+    line-height: 0;
+}
+
+.intro {
+    background: url(img/me.jpg);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 1063px;
+    z-index: -1;
+}
+
+.intro-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(71,65,170);
+    background: -webkit-linear-gradient(59deg, rgba(71,65,170,0.5018207966780462) 0%, rgba(64,97,173,0.5074230375744048) 50%, rgba(0,212,255,0.499019676229867) 100%);
+    background: -moz-linear-gradient(59deg, rgba(71,65,170,0.5018207966780462) 0%, rgba(64,97,173,0.5074230375744048) 50%, rgba(0,212,255,0.499019676229867) 100%);
+    background: -o-linear-gradient(59deg, rgba(71,65,170,0.5018207966780462) 0%, rgba(64,97,173,0.5074230375744048) 50%, rgba(0,212,255,0.499019676229867) 100%);
+    background: linear-gradient(149deg, rgba(71,65,170,0.5018207966780462) 0%, rgba(64,97,173,0.5074230375744048) 50%, rgba(0,212,255,0.499019676229867) 100%); 
+}
+
+.hello {
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: right;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    height: 400px;
+}
+
+.hello h1 {
+    display: inline-block;
+}
+
+.page-content {
+    margin-top: 1113px;
+    background: #fff;
+}
+
+.about {
+    background: #fff;
+}
+
+.about h2 {
+    text-align: center;
+    color: #222;
+}
+
+.about .holder {
+    top: -50px;
+    padding-top: 20px;
+    border-radius: 10px;
+    background: #f2f2f2;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+.about .column {
+    padding: 0 20px;
+}
+
+.projects {
+    background: #222;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.projects .column-6 {
+    width: 49%;
+}
+
+.projects .column:nth-child(odd) {
+    padding-right: 2%;
+}
+
+.project {
+    padding: 30px;
+    background: #f2f2f2;
+    border-radius: 10px;
+}
