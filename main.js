@@ -12,4 +12,10 @@ $('document').ready(function ($) {
         }, 500);
     })
 
+    $('#ContactScroll').click(function () {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top - 53
+        }, 500);
+    })
+
 });
