@@ -13,7 +13,15 @@ header li {
     padding: 10px;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 24px;
+}
+
+header li:hover {
+    background: #f2f2f2;
+}
+
+header li:hover a {
+    color: #222;
 }
 
 header li a {
@@ -45,7 +53,7 @@ header li a {
 
 .hello {
     max-width: 1240px;
-    margin: 0 auto;
+    margin: 200px auto 0;
     text-align: right;
     position: relative;
     display: flex;
@@ -63,16 +71,16 @@ header li a {
     background: #fff;
 }
 
-.about {
+#about {
     background: #fff;
 }
 
-.about h2 {
+#about h2 {
     text-align: center;
     color: #222;
 }
 
-.about .holder {
+#about .holder {
     top: -50px;
     padding-top: 20px;
     border-radius: 10px;
@@ -82,23 +90,24 @@ header li a {
             box-shadow: 0 10px 6px -6px #777;
 }
 
-.about .column {
+#about .column {
     padding: 0 20px;
 }
 
-.projects {
+#projects {
     background: #222;
 }
 
-.projects h2 {
+#projects h2 {
     text-align: center;
 }
 
-.projects .column-6 {
+#projects .column-6 {
     width: 49%;
+    margin-bottom: 2%;
 }
 
-.projects .column:nth-child(odd) {
+#projects .column:nth-child(odd) {
     padding-right: 2%;
 }
 
@@ -106,4 +115,12 @@ header li a {
     padding: 30px;
     background: #f2f2f2;
     border-radius: 10px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+.project:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
 }
