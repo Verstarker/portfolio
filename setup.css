@@ -5,7 +5,7 @@ body { background-color: #222; margin: 0; font-family: 'Open Sans', sans-serif; 
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Lato', sans-serif; color: #f2f2f2; margin-top: 0; text-transform: uppercase; font-weight: 300; }
 h1 { font-size: 70px; text-align: right; }
-h2 { font-size: 32px; }
+h2 { font-size: 40px; }
 h3 { font-size: 22px; }
 h4 { font-size: 18px; }
 h5 { font-size: 18px; }
@@ -13,7 +13,7 @@ h6 { font-size: 16px; }
 
 a { text-decoration: none; cursor: pointer; color: #fff; }
 
-a, .github-link h3, .project-mask:hover { transition:all,.3s,linear }
+a, .github-link h3, .project-mask, .project-github-link, .github-link, .email-link { transition:all,.3s,linear }
 
 button { border: none; cursor: pointer; }
 button:hover { transform: translateY(-1px); box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08); }

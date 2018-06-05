@@ -2,7 +2,7 @@ $('document').ready(function ($) {
 
     $('#HomeScroll').click(function() {
         $('html, body').animate({
-            scrollTop: $(".intro").offset().top - 9999
+            scrollTop: 0 
         }, 500);
     })
 
