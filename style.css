@@ -38,12 +38,15 @@ header li a {
     z-index: -1;
 }
 
-.intro-mask {
+.intro-mask, .project-mask {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+}
+
+.intro-mask {
     background: rgb(71,65,170);
     background: -webkit-linear-gradient(59deg, rgba(71,65,170,0.5018207966780462) 0%, rgba(64,97,173,0.5074230375744048) 50%, rgba(0,212,255,0.499019676229867) 100%);
     background: -moz-linear-gradient(59deg, rgba(71,65,170,0.5018207966780462) 0%, rgba(64,97,173,0.5074230375744048) 50%, rgba(0,212,255,0.499019676229867) 100%);
@@ -67,7 +70,7 @@ header li a {
 }
 
 .page-content {
-    margin-top: 1113px;
+    margin-top: 53%;
     background: #fff;
 }
 
@@ -112,6 +115,7 @@ header li a {
 }
 
 .project {
+    position: relative;
     padding: 30px;
     background: #f2f2f2;
     border-radius: 10px;
@@ -123,6 +127,31 @@ header li a {
 .project:hover {
     cursor: pointer;
     transform: translateY(-1px);
+}
+
+.project-mask {
+    background:rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-mask h2 {
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.project-mask h2 {
+    font-size: 40px;
+}
+
+.project:hover .project-mask {
+    visibility: visible;
+
 }
 
 footer, footer h2, footer h3, footer a, footer i {

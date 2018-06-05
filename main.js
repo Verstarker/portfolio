@@ -1,5 +1,11 @@
 $('document').ready(function ($) {
 
+    $('#HomeScroll').click(function() {
+        $('html, body').animate({
+            scrollTop: $(".intro").offset().top - 9999
+        }, 500);
+    })
+
     $('#AboutScroll').click(function() {
         $('html, body').animate({
             scrollTop: $("#about").offset().top - 150
