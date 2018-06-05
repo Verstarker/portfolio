@@ -13,7 +13,15 @@ h6 { font-size: 16px; }
 
 a { text-decoration: none; cursor: pointer; color: #fff; }
 
-a, .github-link h3, .project-mask, .project-github-link, .github-link, .email-link { transition:all,.3s,linear }
+a,
+.github-link h3,
+.project-mask,
+.project-github-link,
+.github-link,
+.email-link,
+.project-live-link {
+  transition: all, .3s, linear
+}
 
 button { border: none; cursor: pointer; }
 button:hover { transform: translateY(-1px); box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08); }
