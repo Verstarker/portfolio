@@ -67,10 +67,10 @@ header li a {
 
 .remix-mask {
     background: rgb(53,73,94);
-    background: -webkit-linear-gradient(59deg, rgba(53,73,94,0.699019676229867) 0%, rgba(65,184,131,0.7046219171262255) 100%);
-    background: -moz-linear-gradient(59deg, rgba(53,73,94,0.699019676229867) 0%, rgba(65,184,131,0.7046219171262255) 100%);
-    background: -o-linear-gradient(59deg, rgba(53,73,94,0.699019676229867) 0%, rgba(65,184,131,0.7046219171262255) 100%);
-    background: linear-gradient(149deg, rgba(53,73,94,0.699019676229867) 0%, rgba(65,184,131,0.7046219171262255) 100%);
+    background: -webkit-linear-gradient(59deg, rgba(53,73,94,0.7) 0%, rgba(65,184,131,0.7) 100%);
+    background: -moz-linear-gradient(59deg, rgba(53,73,94,0.7) 0%, rgba(65,184,131,0.7) 100%);
+    background: -o-linear-gradient(59deg, rgba(53,73,94,0.7) 0%, rgba(65,184,131,0.7) 100%);
+    background: linear-gradient(149deg, rgba(53,73,94,0.7) 0%, rgba(65,184,131,0.7) 100%);
 }
 
 .travel-mask {
@@ -83,7 +83,18 @@ header li a {
 
 .preloved-mask {
     background: rgb(252, 70, 107);
-    background: linear-gradient(149deg, rgba(252, 70, 107, 0.7) 0%, rgba(63, 94, 251, 0.7) 100%);
+    background: -webkit-linear-gradient(59deg, rgba(252,70,107,0.7) 0%, rgba(63,94,251,0.7) 100%);
+    background: -moz-linear-gradient(59deg, rgba(252,70,107,0.7) 0%, rgba(63,94,251,0.7) 100%);
+    background: -o-linear-gradient(59deg, rgba(252,70,107,0.7) 0%, rgba(63,94,251,0.7) 100%);
+    background: linear-gradient(149deg, rgba(252,70,107,0.7) 0%, rgba(63,94,251,0.7) 100%);
+}
+
+.safehouse-mask {
+    background: rgb(228,34,34);
+    background: -webkit-linear-gradient(59deg, rgba(228,34,34,0.7) 0%, rgba(0,167,198,0.7) 100%);
+    background: -moz-linear-gradient(59deg, rgba(228,34,34,0.7) 0%, rgba(0,167,198,0.7) 100%);
+    background: -o-linear-gradient(59deg, rgba(228,34,34,0.7) 0%, rgba(0,167,198,0.7) 100%);
+    background: linear-gradient(149deg, rgba(228,34,34,0.7) 0%, rgba(0,167,198,0.7) 100%);
 }
 
 #intro-box {
@@ -114,12 +125,12 @@ header li a {
 }
 
 .page-content {
-    margin-top: 59%;
+    margin-top: 1113px;
     background: #fff;
 }
 
 .home-intro {
-    background: url(img/me.jpg);
+    background: url(img/me.jpg) left center;
 }
 
 .remix-intro {
@@ -127,11 +138,15 @@ header li a {
 }
 
 .preloved-intro {
-    background: url(img/preloved/preloved.png);
+    background: url(img/preloved/preloved.jpg);
 }
 
 .travel-intro {
     background: url(img/travelmate/travelmate.png);
+}
+
+.safehouse-intro {
+    background: url(img/safehouse/safehouse.jpg);
 }
 
 /*
@@ -161,12 +176,6 @@ header li a {
 
 #about .about-text {
     padding: 0 20px;
-}
-
-#about .work-text {
-    padding-bottom: 40px;
-    border-bottom: 1px solid #222;
-    margin-bottom: 40px;
 }
 
 #about .skill-list {
@@ -336,4 +345,43 @@ footer i, .project-github-link i, .project-live-link i {
 
 .github-link:hover h3, .github-link:hover i {
     color: #f2f2f2;
+}
+
+
+/*
+ *
+ * Media Queries
+ *
+ *
+ */
+
+
+@media only screen and (max-width: 680px) {
+    #projects .column-6, .project-story .column-6 {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    #about .work-text {
+        padding-bottom: 40px;
+        border-bottom: 1px solid #222;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    header li {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    .project-mask h2 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    header li {
+        padding: 10px 0;
+    }
 }
